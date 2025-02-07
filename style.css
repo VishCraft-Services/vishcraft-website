@@ -1,0 +1,35 @@
+/* Make elements fade in as user scrolls */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button hover effect */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff7b00;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* Link hover effect */
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff7b00;
+}
