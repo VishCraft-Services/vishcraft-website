@@ -1,73 +1,9 @@
-/* Make elements fade in as user scrolls */
+/* Fade-in Effect on Scroll */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Button hover effect */
-button {
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #ff7b00;
-  transform: scale(1.1);
-  color: #fff;
-}
-
-/* Link hover effect */
-a {
-  transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-  color: #ff7b00;
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  section {
-    width: 100%;
-    padding: 20px;
-  }
-
-  button {
-    width: 100%;
-    padding: 10px;
-  }
-}
-.pricing-box {
-  display: inline-block;
-  padding: 20px;
-  border: 2px solid #ff7b00;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.pricing-box:hover {
-  transform: scale(1.1);
-  background-color: #ff7b00;
-  color: #fff;
-}
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Fade-in effect on scroll */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -79,7 +15,12 @@ html {
   transform: translateY(0);
 }
 
-/* Interactive buttons */
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Button Styling */
 button {
   background-color: #ff7b00;
   color: white;
@@ -94,7 +35,16 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(255, 123, 0, 0.5);
 }
 
-/* Dark Mode */
+/* Link Hover Effect */
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff7b00;
+}
+
+/* Dark Mode Styling */
 body.dark-mode {
   background-color: #121212;
   color: white;
@@ -105,7 +55,34 @@ body.dark-mode {
   color: white;
 }
 
-/* FAQ Section Styling */
+.dark-mode .faq-answer {
+  background-color: #222;
+}
+
+.dark-mode a {
+  color: #ffb766;
+}
+
+.dark-mode a:hover {
+  color: #ffa14d;
+}
+
+/* Pricing Box */
+.pricing-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #ff7b00;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-box:hover {
+  transform: scale(1.1);
+  background-color: #ff7b00;
+  color: #fff;
+}
+
+/* FAQ Section */
 .faq-answer {
   display: none;
   padding: 10px;
@@ -118,7 +95,7 @@ body.dark-mode {
   padding: 10px;
 }
 
-/* Blog Styling */
+/* Blog Post Styling */
 .blog-post {
   border-bottom: 2px solid #ff7b00;
   padding: 15px 0;
@@ -140,4 +117,27 @@ body.dark-mode {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .pricing-box {
+    width: 100%;
+    text-align: center;
+  }
 }
